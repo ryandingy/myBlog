@@ -1,0 +1,503 @@
+<?php
+session_start();
+ob_start();
+
+header("Content-Type: text/html;charset=utf-8");
+
+
+
+?>
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>美国旅游 - 北美微博</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="js/swiper/swiper.min.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        
+        <div class="nav">
+            <div class="container">
+                <a class="logo" href="http://weibo.com"></a>
+                <ul>
+                    <li class="first"><a href="http://home.sina.com/" title="北美首页" rel="nofollow"><span>北美首页</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/" title="新闻" rel="nofollow"><span>新闻</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/news/daily.html" title="滚动" rel="nofollow"><span>滚动</span></a></li>
+                    <li><a href="http://chinanews.sina.com/gb/" title="大陆" rel="nofollow"><span>大陆</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/tw/" title="台湾" rel="nofollow"><span>台湾</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/usa/" title="美国" rel="nofollow"><span>美国</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/sports/" title="体育" rel="nofollow"><span>体育</span></a></li>
+                    <li><a href="http://finance.sina.com/gb/" title="财经" rel="nofollow"><span>财经</span></a></li>
+                    <li><a href="http://us.weibo.com/" title="微博" class="current" rel="nofollow"><span>微博</span></a></li>
+                    <li><a href="http://ent.sina.com/gb/" title="娱乐" rel="nofollow"><span>娱乐</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/picture/" title="图片" rel="nofollow"><span>图片</span></a></li>
+                    <li><a href="http://dailynews.sina.com/gb/bbs/" title="论坛" rel="nofollow"><span>论坛</span></a></li>
+                    <li class="selected"><a href="http://travel.sina.com" title="旅游" rel="nofollow"><span>旅游</span></a></li>
+                    <li><a href="http://immigration.sina.com/gb/" title="移民" rel="nofollow"><span>移民</span></a></li>
+                    <li><a href="http://magazine.sina.com/gb/" title="杂志" rel="nofollow"><span>杂志</span></a></li>
+                    <li><a href="http://books.sina.com/gb/" title="书味" rel="nofollow"><span>书味</span></a></li>
+                    <li><a href="http://blogus.sina.com/gb/" title="博客" rel="nofollow"><span>博客</span></a></li>
+                    <li><a href="http://food.sina.com/gb/" title="美食" rel="nofollow"><span>美食</span></a></li>                                  
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container main">
+            <div class="banner swiper-container" id="banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="http://weibo.com/ttarticle/p/show?id=2309404076183342971274&mod=zwenzhang" target="_blank">
+                            <div class="thumb" style="background-image: url('http://wx2.sinaimg.cn/crop.470.0.1213.682.1000/006xGBL0ly1fcthelh9o9j31kw0iy7wk.jpg');">
+                                <h3>《爱乐之城》中的别样洛杉矶（没有剧透）</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="http://weibo.com/ttarticle/p/show?id=2309404078397360892300&mod=zwenzhang" target="_blank">
+                            <div class="thumb" style="background-image: url('http://wx1.sinaimg.cn/crop.0.82.1500.843.1000/006xGBL0ly1fd0ledzawnj315o0qndue.jpg');">
+                                <h3>“手撕”洛杉矶，给你好看！</h3>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="swiper-slide">
+                        <a href="http://weibo.com/ttarticle/p/show?id=2309404079868819152676&mod=zwenzhang" target="_blank">
+                            <div class="thumb" style="background-image: url('http://wx1.sinaimg.cn/crop.0.0.1000.562.1000/006xGBL0ly1fd58pjfwjbj30rs0fyn22.jpg');">
+                                <h3>【游乐天堂】奥兰多玩乐暴走不停！</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="http://weibo.com/ttarticle/p/show?id=2309404075737752674334&mod=zwenzhang" target="_blank">
+                            <div class="thumb" style="background-image: url('http://wx3.sinaimg.cn/crop.0.0.1919.1079.1000/006xGBL0ly1fcr7zxzmrtj31hc0xckct.jpg');">
+                                <h3>春光里的浪漫花事—华盛顿DC赏樱全攻略</h3>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                        
+<!--
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+-->
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="left">
+                
+                <div class="offical-acc left-box">
+                    <h3>官方微博账户</h3>
+                    
+                    <div class="personal-info">                        
+                        <div class="photo">
+                            <a href="http://company.verified.weibo.com/bluev/verify/index?from=headv" class="icon_bed">
+                                <em title="北美新浪旅游频道微博账号" class="icon_approve"></em>
+                            </a>
+                        </div>                        
+                        <h5>北美新浪旅遊</h5>
+                        
+                        <a class="follow-btn" href="http://weibo.com/u/5994570998" target="_blank"><i>+</i>关注</a>
+                        
+                        <div class="infos">
+                            <p class="verify">                            
+                                <a target="_blank" href="http://company.verified.weibo.com/verify/orgapply?from=profile">
+                                    <span class="verify-btn"></span>
+                                </a>
+    
+                                <span class="level">
+                                    <a title="微博等级9" href="http://level.account.weibo.com/level/levelexplain?from=profile2" target="_black">
+                                        <span>Lv.9</span>
+                                    </a>
+                                </span>
+                            </p>
+                            
+                            <div class="clearfix"></div>
+                            
+                            <p class="info"><span>北美新浪旅游频道微博账号</span></p>
+                        </div>
+                        
+                        <ul class="detail">
+                            <li><span><i>3</i>行业类别</span>新浪产品</li>
+                            <li class="last"><span><i>T</i>友情链接</span><a href="https://www.wannar.com" target="_blank" rel="nofollow">玩哪儿网</a><a href="http://travel.sina.com" target="_blank" rel="nofollow">北美新浪旅游</a></li>
+                        </ul> 
+                        
+                        <a class="more-detail" href="http://weibo.com/5994570998/about" target="_blank">更多<i>&gt;</i></a>                     
+                    </div>
+                    
+                    <ul class="counter">
+                        <li><strong>202</strong><span>关注</span></li>
+                        <li><strong>196487</strong><span>粉丝</span></li>
+                        <li class="last"><strong>618</strong><span>微博</span></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="recommend-acc left-box">
+                    <h3 class="title">推荐微博账户</h3>
+                    
+                    <ul>
+                        <li>
+                            <div class="photo" style="background-image: url('http://tva2.sinaimg.cn/crop.0.0.180.180.180/6758e567jw1e8qgp5bmzyj2050050aa8.jpg');"></div>
+                            <div class="detail">
+                                <a class="acc-name" href="http://weibo.com/sinaus" target="_blank">
+                                    <span class="name">北美新浪</span>
+                                    <span class="verify blue"></span>
+                                    <span class="member"></span>
+                                </a>
+                                <p class="intro">新闻、资讯、时尚、趣图、笑话，还有微博上最</p>
+                            </div>
+                            <div class="follow">
+                                <a href="http://weibo.com/sinaus" target="_blank"><i>+</i>关注</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="photo" style="background-image: url('http://tva4.sinaimg.cn/crop.14.105.580.580.180/68284daejw1ehyg2lqqkgj20h00m0js1.jpg');"></div>
+                            <div class="detail">
+                                <a class="acc-name" href="http://weibo.com/discoverlosangeles" target="_blank">
+                                    <span class="name">洛杉矶旅游局</span>
+                                    <span class="verify blue"></span>
+                                    <span class="member"></span>
+                                </a>
+                                <p class="intro">住近一点，玩多一点，吃好一点！洛杉矶五大旅游</p>
+                            </div>
+                            <div class="follow">
+                                <a href="http://weibo.com/discoverlosangeles" target="_blank"><i>+</i>关注</a>
+                            </div>
+                        </li>
+                        <li class="last">
+                            <div class="photo" style="background-image: url('http://tva1.sinaimg.cn/crop.0.0.180.180.180/701b78c1jw1e8qgp5bmzyj2050050aa8.jpg');"></div>
+                            <div class="detail">
+                                <a class="acc-name" href="http://weibo.com/cttccn" target="_blank">
+                                    <span class="name">加州旅游局</span>
+                                    <span class="verify blue"></span>
+                                    <span class="member"></span>
+                                </a>
+                                <p class="intro">阳光沙滩，蓝天碧海，这就是加州，一个充满惊喜</p>
+                            </div>
+                            <div class="follow">
+                                <a href="http://weibo.com/cttccn" target="_blank"><i>+</i>关注</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="right">
+                
+                <div class="post-wrapper">
+                    <div class="post">
+                        <a href="http://weibo.com/u/5994570998" target="_blank"><div class="photo"></div></a>
+                        <div class="content">
+                            <span class="author">
+                                <a class="name" href="http://weibo.com/u/5994570998" target="_blank">北美新浪旅遊</a>
+                                <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                <a class="member" href="http://vip.weibo.com/personal?from=main" target="_blank"></a>
+                            </span>
+                            
+                            <span class="meta">
+                                <span>2月24日 19:51 来自</span>
+                                <a href="http://app.weibo.com/t/feed/PBP2P" target="_blank">微博 weibo.com</a>
+                            </span>
+                            
+                            <p class="main">
+                                <a class="feedpin" href="http://vip.weibo.com/prividesc?priv=1107&from=zdicon" target="_blank">置顶</a>
+                                《神奇动物又出没了，带上最全景点攻略，去黄石看热泉吧！》
+                                <a class="topic" href="http://huati.weibo.com/k/黄石旅行" target="_blank">#黄石旅行#</a>
+                                <a class="topic" href="http://huati.weibo.com/k/黄石公园" target="_blank">#黄石公园#</a>
+                                <a class="topic" href="http://huati.weibo.com/k/黄石国家公园" target="_blank">#黄石国家公园#</a>
+                                <a class="location" href="http://weibo.cn/pages/1001018000156039000000001" target="_blank"><i>2</i>美国·黄石国家公园</a>
+                                <a class="longwb" href="http://t.cn/RiwIa8X" target="_blank"><i>°</i>神奇动物又出没了，带上最全景点攻略，去黄石...​​</a>
+                            </p>
+                            
+                            <a href="http://t.cn/RiwIa8X" target="_blank">
+                                <div class="spec-box">
+                                    <div class="spec-pic" style="background-image: url('http://wx1.sinaimg.cn/crop.0.0.1600.899.1000/006xGBL0ly1fd0a3qecfnj318g0q9n8a.jpg');"></div>
+                                    <div class="spec-info">
+                                        <h3>神奇动物又出没了，带上最全景点攻略，去黄石看热泉吧！</h3>
+                                        <span>关于黄石公园，你想问的都在这里。内容较多，建议先马后看。</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-action">
+                        <ul>
+                            <li><a href="http://weibo.com/5994570998/Ex34lvB7N?type=comment" target="_blank"><i></i>评论</a></li>
+                            <li class="last"><a href="http://weibo.com/5994570998/Ex34lvB7N?type=repost" target="_blank"><i></i>转发</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="post-wrapper">
+                    <div class="post">
+                        <a href="http://weibo.com/u/5994570998" target="_blank"><div class="photo"></div></a>
+                        <div class="content">
+                            <span class="author">
+                                <a class="name" href="http://weibo.com/u/5994570998" target="_blank">北美新浪旅遊</a>
+                                <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                <a class="member" href="http://vip.weibo.com/personal?from=main" target="_blank"></a>
+                            </span>
+                            
+                            <span class="meta">
+                                <span>3月1日 10:46 来自</span>
+                                <a href="http://app.weibo.com/t/feed/PBP2P" target="_blank">微博 weibo.com</a>
+                            </span>
+                            
+                            <p class="main">
+                                <img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/40/hearta_org.gif" title="[心]" alt="[心]" class="emo-icon">
+                                渔人码头
+                                <a class="link" href="http://t.cn/RiV3sku" target="_blank"><i>O</i>网页链接</a>
+                                这场“39”盛宴不容错过！当好玩碰到好玩，精彩遇上精彩，春夏旧金山的魅力呼之欲出
+                                <img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/36/gza_org.gif" title="[鼓掌]" alt="[鼓掌]" class="emo-icon">
+                                <a class="link" href="http://t.cn/RiV3sku" target="_blank"><i>O</i>网页链接</a>                                
+                                得赶快在手帐小本本上安排行程了！
+                                <img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/19/heia_org.gif" title="[偷笑]" alt="[偷笑]" class="emo-icon">
+                            </p>                              
+                        </div>
+                        <div class="feed-expand">
+                            <div class="content">
+                                <span class="author">
+                                    <a class="name" href="http://weibo.com/u/5994570998" target="_blank">@旧金山旅游局</a>
+                                    <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                </span>
+                                
+                                <p class="main">
+                                    <a href="http://huati.weibo.com/k/玩转旧金山" target="_blank" class="topic">#玩转旧金山#</a>
+                                    如今的39号码头是旧金山最热门的景点之一，谁能想到39年前它还是个破烂的旧码头呢。为了庆祝重生的第39年，码头决定要和这个数字死磕到底，从一月到十月连续39周，每个周五都要来个庆祝活动（就是任性<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b6/doge_org.gif" title="[doge]" alt="[doge]" class="emo-icon">）这个月就有郁金香节和电影之夜等等，详细活动日历:
+                                    <a class="link" href="http://t.cn/RJEwVqU" target="_blank"><i>O</i>网页链接</a>
+                                </p>
+                                    
+                                <ul class="media amount-1">
+                                    <li style="background-image: url('http://wx3.sinaimg.cn/orj360/6231dfb8gy1fcueb34dl1j20wd0cb79q.jpg');"></li>
+                                </ul>
+                                
+                                <div class="bottom">
+                                    <span class="meta">
+                                        <span>2月18日 21:16 来自</span>
+                                        <a href="http://app.weibo.com/t/feed/6vtZb0" target="_blank">微博 weibo.com</a>
+                                    </span>
+                                    
+                                    <ul class="action">
+                                        <li><a href="http://weibo.com/1647435704/Ew93uDVMk?type=comment" target="_blank"><i></i>评论</a></li>
+                                        <li class="last"><a href="http://weibo.com/1647435704/Ew93uDVMk?type=repost" target="_blank"><i></i>转发</a></li>
+                                    </ul>
+                                </div>                      
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post-action">
+                        <ul>
+                            <li><a href="http://weibo.com/5994570998/ExKDq4YKl?type=comment" target="_blank"><i></i>评论</a></li>
+                            <li class="last"><a href="http://weibo.com/5994570998/ExKDq4YKl?type=repost" target="_blank"><i></i>转发</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="post-wrapper">
+                    <div class="post">
+                        <a href="http://weibo.com/u/5994570998" target="_blank"><div class="photo"></div></a>
+                        <div class="content">
+                            <span class="author">
+                                <a class="name" href="http://weibo.com/u/5994570998" target="_blank">北美新浪旅遊</a>
+                                <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                <a class="member" href="http://vip.weibo.com/personal?from=main" target="_blank"></a>
+                            </span>
+                            
+                            <span class="meta">
+                                <span>3月1日 10:34 来自</span>
+                                <a href="http://app.weibo.com/t/feed/PBP2P" target="_blank">微博 weibo.com</a>
+                            </span>
+                            
+                            <p class="main">
+                                水上飞机、4月观鲸、景点骑行、高塔夜景，温哥华不仅是加拿大的旅游胜地，还是北美第三大制片中心，享有“北方好莱坞”的美名。  特定日期特定折扣→
+                                <a class="link" href="http://t.cn/RiVu2Cf" target="_blank"><i>O</i>网页链接</a>                                
+                            </p>
+                        </div>
+                        <div class="feed-expand">
+                            <div class="content">
+                                <span class="author">
+                                    <a class="name" href="http://weibo.com/vancouverchina" target="_blank">@加拿大温哥华旅游局</a>
+                                    <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                </span>
+                                
+                                <p class="main">
+                                    温哥华晴朗的天气、湛蓝的天空，多变的晚霞，总是让人感觉心情愉悦<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/9e/jqmweixiao_org.gif" title="[哆啦A梦微笑]" alt="[哆啦A梦微笑]" class="emo-icon">
+                                </p>
+                                    
+                                <ul class="media amount-9">
+                                    <li style="background-image: url('http://wx1.sinaimg.cn/thumb150/7d888af3gy1fcy0ombon6j20qg0wyqv5.jpg');"></li>
+                                    <li style="background-image: url('http://wx4.sinaimg.cn/thumb150/7d888af3gy1fcy0oqoxklj20qa0wyx6p.jpg');"></li>
+                                    <li style="background-image: url('http://wx4.sinaimg.cn/thumb150/7d888af3gy1fcy0oumanoj20wu0wye81.jpg');"></li>
+                                    
+                                    <li style="background-image: url('http://wx3.sinaimg.cn/thumb150/7d888af3gy1fcy0oza3npj20wy0pwkjl.jpg');"></li>
+                                    <li style="background-image: url('http://wx4.sinaimg.cn/thumb150/7d888af3gy1fcy0p3fqebj20qe0wsh0t.jpg');"></li>
+                                    <li style="background-image: url('http://wx4.sinaimg.cn/thumb150/7d888af3gy1fcy0p7yatcj20x60lunpd.jpg');"></li>
+                                    
+                                    <li style="background-image: url('http://wx2.sinaimg.cn/thumb150/7d888af3gy1fcy0pc629pj20qa0wuhdt.jpg');"></li>
+                                    <li style="background-image: url('http://wx3.sinaimg.cn/thumb150/7d888af3gy1fcy0phs6wgj20x00u4axi.jpg');"></li>
+                                    <li style="background-image: url('http://wx1.sinaimg.cn/thumb150/7d888af3gy1fcy0pla2krj20x40lokjl.jpg');"></li>
+                                </ul>
+                                
+                                <div class="bottom">
+                                    <span class="meta">
+                                        <span>2月21日 13:19 来自</span>
+                                        <a href="http://app.weibo.com/t/feed/6vtZb0" target="_blank">微博 weibo.com</a>
+                                    </span>
+                                    
+                                    <ul class="action">
+                                        <li><a href="http://weibo.com/2106100467/Ewydt3aJR?type=comment" target="_blank"><i></i>评论</a></li>
+                                        <li class="last"><a href="http://weibo.com/2106100467/Ewydt3aJR?type=repost" target="_blank"><i></i>转发</a></li>
+                                    </ul>
+                                </div>                      
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post-action">
+                        <ul>
+                            <li><a href="http://weibo.com/5994570998/ExKys93c6?type=comment" target="_blank"><i></i>评论</a></li>
+                            <li class="last"><a href="http://weibo.com/5994570998/ExKys93c6?type=repost" target="_blank"><i></i>转发</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="post-wrapper">
+                    <div class="post">
+                        <a href="http://weibo.com/u/5994570998" target="_blank"><div class="photo"></div></a>
+                        <div class="content">
+                            <span class="author">
+                                <a class="name" href="http://weibo.com/u/5994570998" target="_blank">北美新浪旅遊</a>
+                                <a class="verify blue" href="http://company.verified.weibo.com/bluev/verify/index?from=feedv" target="_blank"></a>
+                                <a class="member" href="http://vip.weibo.com/personal?from=main" target="_blank"></a>
+                            </span>
+                            
+                            <span class="meta">
+                                <span>2月28日 18:50 来自</span>
+                                <a href="http://app.weibo.com/t/feed/PBP2P" target="_blank">微博 weibo.com</a>
+                            </span>
+                            
+                            <p class="main">
+                                颠覆艺术品欣赏方式！《纽约大都会博物馆：当世界级艺术遇上伸展健身课》
+                                <a class="topic" href="http://huati.weibo.com/k/纽约旅行" target="_blank">#纽约旅行#</a>
+                                <a class="topic" href="http://huati.weibo.com/k/纽约玩乐" target="_blank">#纽约玩乐#</a>
+                                <a class="topic" href="http://huati.weibo.com/k/约会博物馆" target="_blank">#约会博物馆#</a>
+                                <a class="longwb" href="http://t.cn/RicZT9f" target="_blank"><i>°</i>纽约大都会博物馆：当世界级艺术遇上伸展健身课​​</a>
+                            </p>
+                            
+                            <a href="http://t.cn/RicZT9f" target="_blank">
+                                <div class="spec-box">
+                                    <div class="spec-pic" style="background-image: url('http://wx1.sinaimg.cn/crop.0.0.1000.562.1000/006xGBL0ly1fd6azmxkbyj30rs0fmwlv.jpg');"></div>
+                                    <div class="spec-info">
+                                        <h3>纽约大都会博物馆：当世界级艺术遇上伸展健身课</h3>
+                                        <span>之前可能去了假的博物馆。。刷新博物馆定义的大都会，怎能不去瞧一瞧！</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-action">
+                        <ul>
+                            <li><a href="http://weibo.com/5994570998/ExEnutvD1?type=comment" target="_blank"><i></i>评论</a></li>
+                            <li class="last"><a href="http://weibo.com/5994570998/ExEnutvD1?type=repost" target="_blank"><i></i>转发</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a class="more-posts" href="http://weibo.com/u/5994570998">查看更多精彩信息</a>
+                
+            </div>            
+        </div>        
+        
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    
+                    <div class="wrapper menu">                    
+                        <h5 class="title">北美新浪</h5>                        
+                        <ul>
+                            <li><a href="http://home.sina.com" rel="nofollow" target="_blank">首页</a></li>
+                            <li><a href="http://news.sina.com/tw" rel="nofollow" target="_blank">台湾</a></li>
+                            <li><a href="http://news.sina.com/sports/index.html" rel="nofollow" target="_blank">体育</a></li>
+                            <li><a href="http://news.sina.com/pic/" rel="nofollow" target="_blank">图片</a></li>
+                            <li><a href="http://weibo.com" rel="nofollow" target="_blank">微博</a></li>
+                            <li><a href="http://news.sina.com" rel="nofollow" target="_blank">新闻</a></li>
+                            <li><a href="http://dailynews.sina.com/bg/usa/index.html" rel="nofollow" target="_blank">美国</a></li>
+                            <li><a href="http://financenews.sina.com/" rel="nofollow" target="_blank">财经</a></li>
+                            <li class="selected"><a href="http://travel.sina.com/" rel="nofollow" target="_blank">旅游</a></li>
+                            <li><a href="http://immigration.sina.com/" rel="nofollow" target="_blank">移民</a></li>
+                            <li><a href="http://chinanews.sina.com/bbs/haiwai/" rel="nofollow" target="_blank">论坛</a></li>
+                            <li><a href="http://chinanews.sina.com" rel="nofollow" target="_blank">大陆</a></li>
+                            <li><a href="http://ent.sina.com" rel="nofollow" target="_blank">娱乐</a></li>
+                            <li><a href="http://dailynews.sina.com/bg/health/index.html" rel="nofollow" target="_blank">健康</a></li>
+                            <li><a href="http://blogus.sina.com" rel="nofollow" target="_blank">博客</a></li>
+                        </ul>                    
+                    </div>
+                    
+                    <div class="wrapper partner">
+                        <h5 class="title">旅游相关</h5>
+                        <ul>
+                            <li><a href="https://www.wannar.com" target="_blank">美国旅游</a></li>
+                            <li><a href="https://www.wannar.com/canada" target="_blank">加拿大旅游</a></li>
+                            <li><a href="https://www.wannar.com/usa/new-york-tour" target="_blank">纽约旅游</a></li>
+                            <li><a href="https://www.wannar.com/usa/los-angeles-tour" target="_blank">洛杉矶旅游</a></li>
+                            <li><a href="https://www.wannar.com/usa/san-francisco-tour" target="_blank">旧金山旅游</a></li>
+                            <li><a href="https://www.wannar.com/usa/las-vegas-tour" target="_blank">拉斯维加斯旅游</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="wrapper co-op">
+                        <h5 class="title">认证&合作</h5>
+                        <ul>
+                            <li><a href="http://verified.weibo.com/verify?bottomnav=1&wvr=6" target="_blank">申请认证</a></li>
+                            <li><a href="http://open.weibo.com/?bottomnav=1&wvr=6" target="_blank">开放平台</a></li>
+                            <li><a href="http://e.weibo.com/introduce/introduce?bottomnav=1&wvr=6" target="_blank">企业微博</a></li>
+                            <li><a href="http://open.weibo.com/connect?bottomnav=1&wvr=6" target="_blank">链接网站</a></li>
+                            <li><a href="http://weibo.com/static/logo?bottomnav=1&wvr=6" target="_blank">微博标识</a></li>
+                            <li><a href="http://tui.weibo.com/?bottomnav=1&wvr=6" target="_blank">广告服务</a></li>
+                            <li><a href="http://xueyuan.weibo.com/?bottomnav=1&wvr=6" target="_blank">微博商学院</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="wrapper help">
+                        <h5 class="title">微博帮助</h5>
+                        <ul>
+                            <li><a href="http://help.weibo.com/faq/q/358?bottomnav=1&wvr=6" target="_blank">常见问题</a></li>
+                            <li><a href="http://help.weibo.com/selfservice?bottomnav=1&wvr=6" target="_blank">自助服务</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>
+                    <a href="http://corp.sina.com.cn/chn/" target="_blank" rel="nofollow">新浪简介</a>&nbsp;|&nbsp;
+                    <a href="http://corp.sina.com.cn/eng/" target="_blank" rel="nofollow">About Sina</a>&nbsp;|&nbsp;
+                    <a href="http://mediakit.sina.com/" target="_blank" rel="nofollow">广告服务</a>&nbsp;|&nbsp;
+                    <a href="http://english.sina.com/" target="_blank" rel="nofollow">Sina English</a>&nbsp;|&nbsp;
+                    <a href="http://mediakit.sina.com/#index07" target="_blank" rel="nofollow">使用条款</a>&nbsp;|&nbsp;
+                    <a href="http://mediakit.sina.com/#index06" target="_blank" rel="nofollow">隐私保护</a>
+                </span>
+                
+                <span class="copyright">Copyright © 1996-2017 SINA Corporation, All Rights Reserved.</span>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/swiper/swiper.jquery.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>    
+</html>
